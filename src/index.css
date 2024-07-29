@@ -85,7 +85,7 @@ img {
 }
 
 .btn {
-  padding: 15px, 25px;
+  padding: 15px 25px;
   border-radius: var(--border-radius-5);
   color: var(--color-text);
   display: inline-block;
