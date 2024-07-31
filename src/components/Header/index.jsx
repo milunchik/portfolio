@@ -35,7 +35,13 @@ const Header = () => {
         </div>
         <div className="column profile__wrapper">
           <div className="profile__photo__container">
-            <img src={profile1} className="profile__photo" alt="" srcset="" />
+            <img
+              src={profile1}
+              className="profile__photo"
+              id="first"
+              alt=""
+              srcset=""
+            />
           </div>
         </div>
       </div>

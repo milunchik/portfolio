@@ -41,9 +41,7 @@ const Navbar = () => {
         ))}
       </div>
       <div className="nav__button__group">
-        <button className="btn btn__primary">
-          Hire Me <FaArrowUpRightFromSquare />
-        </button>
+        {" "}
         <FaBarsStaggered
           className="menu"
           onClick={() => setShowSideBar(!showSidebar)}

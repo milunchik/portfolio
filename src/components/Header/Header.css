@@ -81,6 +81,10 @@
   overflow: hidden;
 }
 
+#first {
+  margin-left: 100px;
+}
+
 #header .profile__photo__container::after {
   position: absolute;
   content: "";
