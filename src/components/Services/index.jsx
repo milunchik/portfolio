@@ -28,8 +28,8 @@ const Services = () => {
             </div>
             <p className="text__muted description">
               I specialize in creating powerful backend solutions using Node.js,
-              TypeScript, NestJS, and GraphQL. My focus is on building scalable
-              and maintainable server-side applications.
+              Express.js, TypeScript, NestJS, and GraphQL. My focus is on
+              building scalable and maintainable server-side applications.
             </p>
           </article>
 

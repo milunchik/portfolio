@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { SiWebmoney } from "react-icons/si";
 import { menu } from "../../data";
 import { Link } from "react-scroll";
-import { FaArrowUpRightFromSquare, FaBarsStaggered } from "react-icons/fa6";
+import { FaBarsStaggered } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
