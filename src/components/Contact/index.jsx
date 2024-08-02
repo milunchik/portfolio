@@ -3,8 +3,15 @@ import "./Contact.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { FaTelegramPlane } from "react-icons/fa";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("mgvwklyy");
+
+  if (state.succeeded) {
+    return <p>Thanks for reaching out! I will get back to you soon.</p>;
+  }
+
   return (
     <section id="contact">
       <div className="section__wrapper contact__container">
@@ -58,26 +65,50 @@ const Contact = () => {
             </article>
           </div>
 
-          <form>
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="name">Full Name</label>
             <input
+              id="name"
               type="text"
               name="name"
               placeholder="Your full name"
               required
             />
+            <ValidationError prefix="Name" field="name" errors={state.errors} />
+
+            <label htmlFor="email">Email Address</label>
             <input
+              id="email"
               type="email"
               name="email"
               placeholder="Your Email"
               required
             />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+
+            <label htmlFor="message">Message</label>
             <textarea
+              id="message"
               name="message"
               rows={7}
               placeholder="Your Message"
               required
             ></textarea>
-            <button type="submit" className="btn btn__primary">
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+
+            <button
+              type="submit"
+              disabled={state.submitting}
+              className="btn btn__primary"
+            >
               Send Message
             </button>
           </form>
