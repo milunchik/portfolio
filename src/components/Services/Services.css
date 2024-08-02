@@ -1,0 +1,142 @@
+#services {
+  background: var(--color-ui-1);
+  padding: 60px 20px;
+}
+
+#services .services__wrapper {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+#services .section__header {
+  margin-bottom: 40px;
+}
+
+#services .primary__title {
+  font-size: 36px;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+#services .description {
+  font-size: 16px;
+  color: var(--color-muted);
+}
+
+#services .services__group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+#services .service {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius-3);
+  color: var(--color-text);
+  padding: 40px 25px;
+  isolation: isolate;
+  cursor: pointer;
+  background: var(--color-ui-2);
+}
+
+#services .service::before,
+#services .service::after {
+  content: "";
+  position: absolute;
+}
+
+#services .service::before {
+  width: 200%;
+  height: 200%;
+  background-image: conic-gradient(
+    var(--color-primary),
+    transparent 60deg,
+    transparent 180deg,
+    var(--color-primary),
+    transparent 240deg
+  );
+  inset: -5%;
+  z-index: -2;
+  animation: spin 9s linear infinite;
+  animation-play-state: paused;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+#services .service:hover::before {
+  animation-play-state: running;
+}
+
+#services .service::after {
+  background: var(--color-ui-2);
+  inset: 0.25rem;
+  border-radius: calc(1.2rem - 0.25rem);
+  z-index: -1;
+  transition: var(--transition);
+}
+
+#services .service .service__top {
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#services .icon__container {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-ui-2);
+  border: solid 1px var(--color-primary);
+}
+
+#services .icon {
+  font-size: 40px;
+  color: var(--color-primary);
+}
+
+#services .title {
+  font-size: 25px;
+  background: linear-gradient(
+    to right,
+    var(--color-primary),
+    0%,
+    var(--color-white) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#services .description {
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
+  transition: var(--transition);
+}
+
+#services .service:hover .description {
+  color: var(--color-text);
+}
+
+@media (max-width: 1000px) {
+  #services .services__group {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #services .service__top {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
