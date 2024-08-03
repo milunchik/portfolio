@@ -20,7 +20,7 @@ export const projects = [
   {
     id: 1,
     title: "Vocabulary Learning Website",
-    image: project1,
+    image: project2,
     category: "Web",
     data: {
       description: `This platform is designed to help you master new vocabulary with ease. Offering translations in 256 languages, pronunciation guides, and engaging memory games, it enhances word retention and makes learning fun and effective.`,
@@ -29,7 +29,7 @@ export const projects = [
     stack: [
       {
         name: "NodeJs",
-        image: <FaNodeJs />,
+        icon: <FaNodeJs />,
         iconColor: "green",
       },
       {
@@ -47,7 +47,7 @@ export const projects = [
   {
     id: 2,
     title: "Social Media Platform",
-    image: project2,
+    image: project1,
     category: "Web",
     data: {
       description:
