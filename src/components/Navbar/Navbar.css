@@ -9,6 +9,11 @@
   z-index: 1000;
 }
 
+.navbar__container.visible {
+  background: var(--color-ui-2);
+  position: sticky;
+}
+
 .navbar__container .logo__container {
   display: flex;
   align-items: flex-end;

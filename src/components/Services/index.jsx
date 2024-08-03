@@ -1,15 +1,50 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./Services.css";
 import { HiDesktopComputer } from "react-icons/hi";
 import { FiDatabase } from "react-icons/fi";
 import { AiOutlineApi } from "react-icons/ai";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 const Services = () => {
+  const container = useRef(null);
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    const el = container.current;
+
+    gsap.fromTo(
+      ".service__head",
+      { opacity: 0 },
+      {
+        opacity: 1,
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      ".service",
+      { y: 50, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+        },
+      }
+    );
+  }, []);
+
   return (
-    <section id="services">
+    <section id="services" ref={container}>
       <div className="section__wrapper services__wrapper">
         <div className="section__header center">
-          <h2 className="primary__title">My Services</h2>
+          <h2 className="primary__title service__head">My Services</h2>
           <p className="text__muted description">
             I offer a wide range of services to help you build robust and
             scalable web applications. With my expertise in backend development,
