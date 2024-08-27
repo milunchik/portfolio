@@ -45,7 +45,13 @@
 
 .card .picture {
   height: 250px;
-  overflow: hidden;
+  overflow: visible;
+}
+
+.card .picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .card .card__details {

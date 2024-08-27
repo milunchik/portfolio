@@ -83,11 +83,11 @@ export const projects = [
       demoLink: "https://google.com/",
     },
     stack: [
-      {
-        name: "ReactJs",
-        icon: <DiReact />,
-        iconColor: "skyblue",
-      },
+      // {
+      //   name: "ReactJs",
+      //   icon: <DiReact />,
+      //   iconColor: "skyblue",
+      // },
       {
         name: "NodeJs",
         icon: <FaNodeJs />,
