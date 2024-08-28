@@ -1,7 +1,6 @@
-import { DiReact } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { SiExpress, SiMongodb } from "react-icons/si";
-import { SiFiverr } from "react-icons/si";
+import { FaTelegram } from "react-icons/fa6";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
 import { project1 } from "./images";
@@ -19,12 +18,12 @@ export const menu = [
 export const projects = [
   {
     id: 1,
-    title: "Vocabulary Learning Website",
+    title: "ENGL",
     image: project2,
     category: "Web",
     data: {
       description: `This platform is designed to help you master new vocabulary with ease. Offering translations in 256 languages, pronunciation guides, and engaging memory games, it enhances word retention and makes learning fun and effective.`,
-      demoLink: "https://google.com/",
+      demoLink: "https://engl-mk1h.onrender.com",
     },
     stack: [
       {
@@ -46,7 +45,7 @@ export const projects = [
 
   {
     id: 2,
-    title: "Social Media Platform",
+    title: "AbiMil",
     image: project1,
     category: "Web",
     data: {
@@ -80,14 +79,9 @@ export const projects = [
     data: {
       description:
         "Welcome to a bustling marketplace where you can seamlessly buy and sell items tailored to your needs. Our platform transforms the traditional shopping experience, offering a dynamic environment where you can become both a seller and a buyer. ",
-      demoLink: "https://google.com/",
+      demoLink: "https://shop-s5cj.onrender.com",
     },
     stack: [
-      // {
-      //   name: "ReactJs",
-      //   icon: <DiReact />,
-      //   iconColor: "skyblue",
-      // },
       {
         name: "NodeJs",
         icon: <FaNodeJs />,
@@ -163,8 +157,8 @@ export const experience = [
 
 export const socialHandles = [
   {
-    name: "Fiverr",
-    icon: <SiFiverr />,
+    name: "Telegram",
+    icon: <FaTelegram />,
     link: "",
   },
   {
@@ -175,7 +169,7 @@ export const socialHandles = [
   {
     name: "LinkedIn",
     icon: <AiFillLinkedin />,
-    link: "",
+    link: "https://www.linkedin.com/in/emilia-grab-525304321/",
   },
   {
     name: "Instagram",
