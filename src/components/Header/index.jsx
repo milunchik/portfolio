@@ -90,7 +90,7 @@ const Header = () => {
               className="profile__photo"
               id="first"
               alt=""
-              srcset=""
+              srcSet=""
             />
           </div>
         </div>
