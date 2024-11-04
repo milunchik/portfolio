@@ -3,9 +3,16 @@ import { SiExpress, SiMongodb } from "react-icons/si";
 import { FaTelegram } from "react-icons/fa6";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
+import { SiNestjs } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { TbBrandTypescript } from "react-icons/tb";
+
 import { project1 } from "./images";
 import { project2 } from "./images";
 import { project3 } from "./images";
+import { project4 } from "./images";
+import { project5 } from "./images";
 
 export const menu = [
   { name: "About" },
@@ -22,7 +29,7 @@ export const projects = [
     image: project2,
     category: "Web",
     data: {
-      description: `This platform is designed to help you master new vocabulary with ease. Offering translations in 256 languages, pronunciation guides, and engaging memory games, it enhances word retention and makes learning fun and effective.`,
+      description: `This platform is designed to help you master new vocabulary with ease. Offering translations in 256 languages, pronunciation guides, and engaging memory games.`,
       demoLink: "https://engl-mk1h.onrender.com",
     },
     stack: [
@@ -42,15 +49,77 @@ export const projects = [
       },
     ],
   },
-
   {
     id: 2,
+    title: "VEIL",
+    image: project4,
+    category: "Web",
+    data: {
+      description: `This platform hepls you to find a tutor for increase level of your knowledge.`,
+      demoLink: "https://veil-q3heeeujs-hremilys-projects.vercel.app",
+    },
+    stack: [
+      {
+        name: "Nest",
+        icon: <SiNestjs />,
+        iconColor: "red",
+      },
+      {
+        name: "TS",
+        icon: <TbBrandTypescript />,
+        iconColor: "blue",
+      },
+      {
+        name: "React",
+        icon: <FaReact />,
+      },
+      {
+        name: "Postgre",
+        icon: <SiPostgresql />,
+        iconColor: "darkblue",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "ClinVix",
+    image: project5,
+    category: "Web",
+    data: {
+      description: `This is a website for the hospital with the opportunity of choosing and booking a doctor appointment.`,
+
+      demoLink: "",
+    },
+    stack: [
+      {
+        name: "TS",
+        icon: <TbBrandTypescript />,
+        iconColor: "blue",
+      },
+      {
+        name: "React",
+        icon: <FaReact />,
+      },
+      {
+        name: "ExpressJs",
+        icon: <SiExpress />,
+      },
+      {
+        name: "Posrgre",
+        icon: <SiPostgresql />,
+        iconColor: "darkblue",
+      },
+    ],
+  },
+
+  {
+    id: 5,
     title: "AbiMil",
     image: project1,
     category: "Web",
     data: {
       description:
-        "Experience a vibrant social network where connections come alive. This platform allows users to post text updates and photos, sharing moments with a community focused on engagement and interaction.",
+        "Experience a vibrant social network where connections come alive. This platform allows users to sharing moments with a community focused on engagement and interaction.",
       demoLink: "https://google.com/",
     },
     stack: [
@@ -72,13 +141,13 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "Marketplace Network",
     image: project3,
     category: "App",
     data: {
       description:
-        "Welcome to a bustling marketplace where you can seamlessly buy and sell items tailored to your needs. Our platform transforms the traditional shopping experience, offering a dynamic environment where you can become both a seller and a buyer. ",
+        "Welcome to a bustling marketplace where you can seamlessly buy and sell items tailored to your needs. ",
       demoLink: "https://shop-s5cj.onrender.com",
     },
     stack: [
@@ -159,7 +228,7 @@ export const socialHandles = [
   {
     name: "Telegram",
     icon: <FaTelegram />,
-    link: "",
+    link: "https://t.me/millunchik",
   },
   {
     name: "Github",
