@@ -17,7 +17,7 @@ import { project5 } from "./images";
 export const menu = [
   { name: "About" },
   { name: "Services" },
-  { name: "Skill" },
+  { name: "Skills" },
   { name: "Projects" },
   { name: "Contact" },
 ];
@@ -86,7 +86,7 @@ export const projects = [
     image: project5,
     category: "Web",
     data: {
-      description: `This is a website for the hospital with the opportunity of choosing and booking a doctor appointment.`,
+      description: `Hospital's site with the opportunity of choosing and booking a doctor-appointment.`,
 
       demoLink: "",
     },
@@ -119,7 +119,7 @@ export const projects = [
     category: "Web",
     data: {
       description:
-        "Experience a vibrant social network where connections come alive. This platform allows users to sharing moments with a community focused on engagement and interaction.",
+        "Experience a vibrant social network where connections come alive.",
       demoLink: "https://google.com/",
     },
     stack: [
@@ -147,7 +147,7 @@ export const projects = [
     category: "App",
     data: {
       description:
-        "Welcome to a bustling marketplace where you can seamlessly buy and sell items tailored to your needs. ",
+        "Marketplace, where you can seamlessly buy and sell items that you need. ",
       demoLink: "https://shop-s5cj.onrender.com",
     },
     stack: [
@@ -206,7 +206,7 @@ export const experience = [
       },
       {
         skill: "Nest JS",
-        level: "Intermediate",
+        level: "Experienced",
       },
       {
         skill: "MySQL",
@@ -214,7 +214,7 @@ export const experience = [
       },
       {
         skill: "PostgreSQL",
-        level: "Intermediate",
+        level: "Experienced",
       },
       {
         skill: "Graphql",
